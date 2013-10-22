@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BorSell.com | Front Page</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css"> -->
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+
+  .bordered{
+    border:1px solid red;
+  }
+
+  .entry-info{
+    display:inline-block;
+  }
+
+  .entry-info-list{
+    list-style-type:none;
+  }
+
+  .entry-info-list li{
+    display:inline-block;
+    padding:0 5px;
+  }
+
+
+  .entry-info-list ul{
+    list-style-type:none;
+    padding:0;
+  }
+
+  .entry-buttons{
+    display:inline-block;
+  }
+
+  .entry-description-contactinfo ul{
+    list-style-type:none;
+  }
+
+  .entry-description-contactinfo ul li i{
+    padding-right:18px;
+  }
+
+
+  </style>
+
+  <script>
+  $(document).ready(function(){
+    $(".entry-description").hide();
+
+    $("#first-expand").click(function(){
+      $("#first-description").slideToggle("slow");
+    });
+
+    $( "#second-expand" ).click(function() {
+      $( "#second-description" ).slideToggle( "slow" );
+    });
+
+    $("#third-expand").click(function(){
+      $("#third-description").slideToggle("slow");
+    });
+
+
+  });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">BorSell.com</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <form class="navbar-form navbar-left">
+          <div class="form-group" style="position:relative">
+            <input type="search" placeholder="What are you looking for?" style="width:300px" class="form-control">
+            <a href="frontpage.html"><i class="icon-search icon-flip-horizontal" style="position:absolute;right:15px;top:9px"></i></a>
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Front Page</a></li>
+          <li><a href="#about">Your Listings</a></li>
+          <li><a href="#contact">Watching</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Listings <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div>
+  <!-- /navbar -->
+
+
+  <!-- /main content -->
+  <div class="container" style="margin-top:100px;">
+
+    <div class="row">
+      <div class="col-md-1"><i class="icon-expand-alt icon-4x" id="first-expand"></i></div>
+      <div class="col-md-10">
+        <div class="row">
+          <h4 class="entry-title">HP Laptop 14"</h4>
+          <div class="col-md-10">
+            <div class="entry-info">
+              <ul class="entry-info-list">
+                <li class="price">$200 OBO</li>
+                <li class="split"><i class="icon-circle"></i></li>
+                <li class="date">submitted 2 hours ago</li>
+                <li class="author">by John Smith</li>
+                <li class="split"><i class="icon-circle"></i></li>
+                <li class="tags">
+                  <ul>tags:
+                    <li>computers</li>
+                    <li>electronics</li>
+                    <li>laptops</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="entry-buttons">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Watch this listing
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row entry-description" id="first-description">
+          <hr>
+          <div class="entry-description-text">
+            <p>Laptop is in good working condition. i5 Processor, 4GB of RAM and 1TB of storage.</p>
+            <p>Text or e-mail me.</p>
+          </div>
+          <div class="entry-description-contactinfo">
+            <b>Contact:</b>
+            <ul>
+              <li><i class="icon-facebook-sign"></i>John Smith</li>
+              <li><i class="icon-envelope"></i>john.smith@uconn.edu</li>
+              <li><i class="icon-phone-sign"></i>203.123.4567</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-1"><i class="icon-expand-alt icon-4x" id="second-expand"></i></div>
+      <div class="col-md-10">
+        <div class="row">
+          <h4 class="entry-title">Michigan ticket</h4>
+          <div class="col-md-10">
+            <div class="entry-info">
+              <ul class="entry-info-list">
+                <li class="price">$5</li>
+                <li class="split"><i class="icon-circle"></i></li>
+                <li class="date">submitted 3 hours ago</li>
+                <li class="author">by Johna Smith</li>
+                <li class="split"><i class="icon-circle"></i></li> 
+                <li class="tags">
+                  <ul>tags:
+                    <li>tickets</li>
+                    <li>basketball</li>
+                    <li>men's</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="entry-buttons">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Watch this listing
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row entry-description" id="second-description">
+          <hr>
+          <div class="entry-description-text">
+            <p>Selling men's Michigan bball ticket.</p>
+            <p>Message me on FB for more info.</p>
+          </div>
+          <div class="entry-description-contactinfo">
+            <b>Contact:</b>
+            <ul>
+              <li><i class="icon-facebook-sign"></i>Johna Smith</li>
+              <li><i class="icon-envelope"></i>johna.smith@uconn.edu</li>
+              <li><i class="icon-phone-sign"></i>203.123.4567</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-1"><i class="icon-expand-alt icon-4x" id="third-expand"></i></div>
+      <div class="col-md-10">
+        <div class="row">
+          <h4 class="entry-title">Printer</h4>
+          <div class="col-md-10">
+            <div class="entry-info">
+              <ul class="entry-info-list">
+                <li class="price">$20</li>
+                <li class="split"><i class="icon-circle"></i></li>
+                <li class="date">submitted 4 hours ago</li>
+                <li class="author">by Joe Doe</li>
+                <li class="split"><i class="icon-circle"></i></li> 
+                <li class="tags">
+                  <ul>tags:
+                    <li>printer</li>
+                    <li>electronics</li>
+                    <li>computer</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="entry-buttons">
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> Watch this listing
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row entry-description" id="third-description">
+          <hr>
+          <div class="entry-description-text">
+            <p>This is a brand new printer, got it with my computer but don't need it.</p>
+            <p>Message me on FB for more info.</p>
+          </div>
+          <div class="entry-description-contactinfo">
+            <b>Contact:</b>
+            <ul>
+              <li><i class="icon-facebook-sign"></i>Joe Doe</li>
+              <li><i class="icon-envelope"></i>joedoe@uconn.edu</li>
+              <li><i class="icon-phone-sign"></i>203.123.4567</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /main content -->
+
+</body>
+
+</html>
