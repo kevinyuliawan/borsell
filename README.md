@@ -1,4 +1,2 @@
 borsell
 =======
-
-BorSell.com
